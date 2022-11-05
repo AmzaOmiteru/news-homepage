@@ -198,7 +198,23 @@ nav a:hover{
     
     max-width: 30%;
 }
-
+/* footer */
+footer{
+    font-size: 1.2rem;
+    min-width: 100%;
+    text-align: center;
+    color: #00001a;
+    padding: 2rem 0px;
+}
+footer a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #5d5f79;
+}
+footer a:hover{
+    text-decoration: none;
+    color: #f15e50;
+}
 
 @media (max-width: 780px){
     .navbar-toggler{
