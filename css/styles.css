@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+
+/*  */
+*{
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: #fffdfa;
+}
+main{
+    margin-top: 2.5rem;
+}
+
+
+/* Header Styling */
+header{
+    margin: 0px;
+    padding: 2.5rem 0px;
+    margin: 2.5rem 0px;    
+}
+nav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0px;
+}
+.nav-btn{
+    border: none;
+    padding: 0px;
+}
+nav ul{
+    margin-bottom: 0px;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    gap: 2rem;
+}
+#MenuBar{
+    padding: 12px;
+    max-width: 75vw !important;
+}
+.btn-close{
+    background-size: contain;
+    background-blend-mode: darken;
+    height: 1rem;
+    width: 1rem;
+    opacity: 1;
+}
+.btn-close:focus{
+    box-shadow: none;
+}
+nav a{
+    color: #c5c6ce;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+nav a:hover{
+    color: #f15e50;
+}
+.navbar-toggler{
+    display: none;
+    border: none;
+}
+.navbar-toggler-icon{
+    opacity: 1;
+    transform: scaleX(1.5) scaleY(.8);
+}
+.navbar-toggler:active, .navbar-toggler:hover, .navbar-toggler:focus{
+    box-shadow: none;
+    border: none;
+}
+
+
+
+
+/* Hero Area */
+.hero-btn{
+    letter-spacing: 4px;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    background-color: #f15e50;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.5s;
+}
+.hero-btn:hover{
+    color: white;
+    background-color: #00001a;
+    text-decoration: none;
+}
+.hero{
+    max-width: 70%;
+
+}
+.hero h1{
+    font-size: 4rem;
+    color: #00001a;
+}
+.hero img{
+    width: 100%;
+}
+.txt1{
+    padding: 2rem 0px;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    
+}
+.read-more{
+    color: #c5c6ce;
+}
+.hero .txt1 h1{
+    font-weight: 800;
+}
+
+
+@media (max-width: 780px){
+    .navbar-toggler{
+        display: block;
+
+    }
+    nav.col{
+        display: none;
+    }
+    body{
+        margin: 0px 2px ;
+    }
+
+}
