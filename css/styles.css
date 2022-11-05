@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
 
 
 /*  */
@@ -9,7 +9,8 @@ body{
     background-color: #fffdfa;
 }
 main{
-    margin-top: 2.5rem;
+    min-height: 100vh;
+    padding-top: 2.5rem;
 }
 
 
@@ -52,11 +53,12 @@ nav ul{
     box-shadow: none;
 }
 nav a{
-    color: #c5c6ce;
+    color: #5d5f79;
     text-decoration: none;
-    transition: color 0.5s;
+    transition: color 0.4s;
 }
 nav a:hover{
+    cursor: pointer;
     color: #f15e50;
 }
 .navbar-toggler{
@@ -76,7 +78,16 @@ nav a:hover{
 
 
 /* Hero Area */
+[hero]{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.pho{
+    display: none;
+}
 .hero-btn{
+    font-weight: 400;
     letter-spacing: 4px;
     padding: 1em 2em;
     text-transform: uppercase;
@@ -86,15 +97,16 @@ nav a:hover{
     transition: background-color 0.5s;
 }
 .hero-btn:hover{
+    cursor: pointer;
     color: white;
     background-color: #00001a;
     text-decoration: none;
 }
 .hero{
-    max-width: 70%;
+    max-width: 65%;
 
 }
-.hero h1{
+.hero .h1{
     font-size: 4rem;
     color: #00001a;
 }
@@ -110,10 +122,81 @@ nav a:hover{
     
 }
 .read-more{
-    color: #c5c6ce;
+    color: #5d5f79;
 }
 .hero .txt1 h1{
     font-weight: 800;
+}
+.hero-side{
+    padding: 1rem;
+    background-color: #00001a;
+    color: white;
+}
+.hero-side p{
+    color: #c5c6ce;
+    font-size: 1.2rem;
+}
+.hero-side h1{
+    padding: 1rem 0px;
+    color: #e9ab53;
+    font-weight: 700;
+}
+.hero-side h4{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.5s;
+}
+.hero-side a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.hero-side h4:hover{
+    cursor: pointer;
+    color: #e9ab53;
+    text-decoration: none;
+
+}
+[lists]{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.list a:hover{
+    cursor: auto;
+
+}
+
+/* the rest */
+[rest]{
+    padding: 2.5rem 0px;
+
+}
+[rest] h2{
+    font-size: 2.5rem;
+    color: #c5c6ce;
+    font-weight: 700;
+}
+[rest] h5{
+    color: #00001a;
+    font-weight: 700;
+    transition: color 0.5s;
+}
+[rest] h5:hover{
+    cursor: pointer;
+    color: #f15e50;
+}
+[rest]>div{
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+
+}
+[rest] img{
+    
+    max-width: 30%;
 }
 
 
@@ -127,6 +210,38 @@ nav a:hover{
     }
     body{
         margin: 0px 2px ;
+    }
+    /* hero */
+    [hero]{
+        flex-direction: column;
+    }
+    .pho{
+        display: block;
+    }
+    .lap{
+        display: none;
+    }
+    .hero{
+        max-width: 100%;
+    }
+    .txt1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* rest */
+    [rest]{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    [rest] h2{
+        font-size: 1.5rem;
+    }
+    [rest] h5{
+        font-size: 1rem;
+    }
+    [rest] p{
+        font-size: 0.9rem;
     }
 
 }
