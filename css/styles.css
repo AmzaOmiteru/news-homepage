@@ -227,6 +227,9 @@ footer a:hover{
     body{
         margin: 0px 2px ;
     }
+    main{
+        padding-top: opx;
+    }
     /* hero */
     [hero]{
         flex-direction: column;
