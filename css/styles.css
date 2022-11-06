@@ -215,6 +215,23 @@ footer a:hover{
     text-decoration: none;
     color: #f15e50;
 }
+.offcanvas ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 6rem;
+    padding-left: 1rem;
+}
+.offcanvas ul li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #00001a;
+    transition: color 0.2s;
+}
+.offcanvas ul li a:focus, .offcanvas ul li a:active{
+    color: #f15e50;
+}
 
 @media (max-width: 1000px){
     .navbar-toggler{
@@ -228,7 +245,7 @@ footer a:hover{
         margin: 0px 2px ;
     }
     main{
-        padding-top: opx;
+        padding-top: 0px;
     }
     /* hero */
     [hero]{
@@ -246,6 +263,9 @@ footer a:hover{
     .txt1{
         display: flex;
         flex-direction: column;
+    }
+    .hero .h1 {
+        font-size: 2.8rem;
     }
 
     /* rest */
